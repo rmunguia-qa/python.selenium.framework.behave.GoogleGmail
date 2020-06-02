@@ -1,0 +1,310 @@
+{
+  "__comments__": "STEP 1 - CREA UNA CUENTA DE GOOGLE",
+
+  "LogoImage": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@id='logo']"
+  },
+
+  "HeadingText": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@id='headingText']",
+    "__comments__": "Crea una cuenta de Google"
+  },
+
+  "NombreInput": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "firstName"
+  },
+
+  "ApellidosInput": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "lastName"
+  },
+
+  "NombreUsuarioInput": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "username"
+  },
+
+  "NombreUsuarioRules": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),' letras, números y puntos')]",
+    "__comments__": "Puedes utilizar letras, números y puntos"
+  },
+
+  "DirActualButton": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),' dirección de correo ')]",
+    "__comments__": "Prefiero usar mi dirección de correo electrónico actual"
+  },
+
+  "DirActualText": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),' dirección de correo electrónico es tuya.')]",
+    "__comments__": "Deberás confirmar que esta dirección de correo electrónico es tuya."
+  },
+
+  "CrearCuentaButton": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),' dirección de Gmail')]",
+    "__comments__": "Crear nueva dirección de Gmail"
+  },
+
+  "PasswordInput": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@name='Passwd']"
+  },
+
+  "ConfirmPasswordInput": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@name='ConfirmPasswd']"
+  },
+
+  "VerPasswordLink": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@class='JIzqne IMVfif']//*[local-name()='svg']"
+  },
+
+  "PasswordRules": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@class='kTNrif']",
+    "__comments__": "Utiliza ocho caracteres como mínimo con una combinación de letras, números y símbolos"
+  },
+
+  "InicioSesionLink": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@class='IMH1vc lUHSR Hj2jlf']",
+    "__comments__": "Prefiero iniciar sesión"
+  },
+
+  "SiguienteButton1": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@class='RveJvd snByac']"
+  },
+
+  "GoogleImage": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@class='j9NuTc TrZEUc']"
+  },
+
+  "GoogleImageText": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@class='oEvHdd']",
+    "__comments__": "Una cuenta. Todo Google a tu disposición."
+  },
+
+  "IdiomaList": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@id='lang-chooser']",
+    "__comments__": "Por defecto, Español (España) / English (United Kingdom)"
+  },
+
+  "EnglishList": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[@class='OA0qNb ncFHed']//div[8]",
+    "__comments__": "Por defecto, Español (España) / English (United Kingdom)"
+  },
+
+  "EspañolList": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[@class='OA0qNb ncFHed']//div[10]",
+    "__comments__": "Por defecto, Español (España) / English (United Kingdom)"
+  },
+
+  "AyudaLink": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'Ayuda')]"
+  },
+
+  "AyudaText": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'¿Cómo podemos ayudarte?')]",
+    "__comments__": "¿Cómo podemos ayudarte?"
+  },
+
+  "PrivacidadLink": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'Privacidad')]"
+  },
+
+  "PrivacidadText": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@class='f5Dvbb'][contains(text(), ' Privacidad ')]",
+    "__comments__": "Política de Privacidad de Google"
+  },
+
+  "TerminosLink": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'Términos')]"
+  },
+
+  "TerminosText": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@class='bVzSHe']",
+    "__comments__": "Términos del Servicio de Google"
+  },
+
+  "InicioSesionText": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'Selecciona una cuenta')]",
+    "__comments__": "Al pulsar InicioSesionLink, se verifica el texto Seleciona una cuenta"
+  },
+
+  "__comments__": "STEP 1 - CONTROL ERRORES",
+
+  "Err_Nombre": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'tu nombre.')]",
+    "__comments__": "Introduce tu nombre."
+  },
+
+  "Err_Apellidos": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'tus apellidos.')]",
+    "__comments__": "Introduce tus apellidos."
+  },
+
+  "Err_NombreUsuario1": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'una dirección de')]",
+    "__comments__": "Elige una dirección de Gmail"
+  },
+
+  "Err_NombreUsuario2": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'dejar este campo ')]",
+    "__comments__": "No puedes dejar este campo en blanco."
+  },
+
+  "Err_NombreUsuario3": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'usuario ya está en uso')]",
+    "__comments__": "Ese nombre de usuario ya está en uso. Prueba con otro."
+  },
+
+  "Err_Password1": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'una contraseña')]",
+    "__comments__": "Introducir una contraseña"
+  },
+
+  "Err_Password2": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'Usa 8 caracteres como mínimo para la contraseña')]",
+    "__comments__": "Usa 8 caracteres como mínimo para la contraseña"
+  },
+
+  "Err_ConfirmPassword1": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'Confirma tu')]",
+    "__comments__": "Confirma tu contraseña"
+  },
+
+  "Err_ConfirmPassword2": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'contraseñas no coinciden')]",
+    "__comments__": "Estas contraseñas no coinciden; inténtalo de nuevo."
+  },
+
+  "__comments__": "STEP 2 - VERIFICA TU TELÉFONO",
+
+  "__comments__": "LogoImage Step 1 es igual en Step 2",
+
+  "__comments__": "HeadingText Step 1 es igual en Step 2, cambia el texto Verifica tu teléfono",
+
+  "HeadingSubtext1": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@id='headingSubtext']",
+    "__comments__": "Por tu seguridad, Google quiere confirmar tu identidad, de manera que te enviará un mensaje de texto con un código de verificación de seis dígitos."
+  },
+
+  "HeadingSubtext2": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@class='OAeUSb']",
+    "__comments__": "Se aplicarán las tarifas estándar"
+  },
+
+  "PrefixList": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@class='MocG8c aCjZuc LMgvRb KKjvXb']"
+  },
+
+  "PhoneInput": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "phoneNumberId"
+  },
+
+  "AtrasLink": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@class='IMH1vc lUHSR Hj2jlf']"
+  },
+
+  "SiguienteButton2": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@class='ZFr60d CeoRYc']"
+  },
+
+  "__comments__": "GoogleImage Step 1 es igual en Step 2",
+
+  "__comments__": "GoogleImageText Step 1 es igual en Step 2, pero con otro texto Tu información personal es privada y está protegida",
+
+  "__comments__": "IdiomaList Step 1 es igual en Step 2",
+
+  "__comments__": "AyudaLink Step 1 es igual en Step 2",
+
+  "__comments__": "PrivacidadLink Step 1 es igual en Step 2",
+
+  "__comments__": "TerminosLink Step 1 es igual en Step 2",
+
+  "__comments__": "STEP 2 - CONTROL ERRORES",
+
+  "Err_Phone1": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'número de ')]",
+    "__comments__": "Introduce un número de teléfono."
+  },
+
+  "Err_Phone2": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'no se reconoce. Comprueba ')]",
+    "__comments__": "El formato de este número de teléfono no se reconoce. Comprueba el país y el número. 999 08 74 76"
+  },
+
+  "__comments__": "STEP 3 - CÓDIGO VERIFICACIÓN",
+
+  "CodigoInput": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='code']"
+  },
+
+  "LlamarButton": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@class='uBOgn']"
+  },
+
+  "VerificarButton": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@class='ZFr60d CeoRYc']"
+  },
+
+  "__comments__": "STEP 3 - CONTROL ERRORES",
+
+  "Err_VerificarPhone1": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'Introduce un código')]",
+    "__comments__": "Introduce un código"
+  },
+
+  "Err_VerificarPhone2": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'cantidad de dígitos')]",
+    "__comments__": "La cantidad de dígitos no es correcta. Inténtalo de nuevo."
+  },
+
+  "Err_VerificarPhone3": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(text(),'código es incorrecto')]",
+    "__comments__": "El código es incorrecto. Inténtalo de nuevo."
+  }
+}
