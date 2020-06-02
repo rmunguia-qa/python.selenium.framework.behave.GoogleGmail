@@ -128,21 +128,9 @@
     "ValueToFind": "//*[contains(text(),'Privacidad')]"
   },
 
-  "PrivacidadText": {
-    "GetFieldBy": "Xpath",
-    "ValueToFind": "//*[@class='f5Dvbb']",
-    "__comments__": "Política de Privacidad de Google"
-  },
-
   "TerminosLink": {
     "GetFieldBy": "Xpath",
     "ValueToFind": "//*[contains(text(),'Términos')]"
-  },
-
-  "TerminosText": {
-    "GetFieldBy": "Xpath",
-    "ValueToFind": "//*[@class='bVzSHe']",
-    "__comments__": "Términos del Servicio de Google"
   },
 
   "InicioSesionText": {
