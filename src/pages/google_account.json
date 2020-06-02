@@ -130,7 +130,7 @@
 
   "PrivacidadText": {
     "GetFieldBy": "Xpath",
-    "ValueToFind": "//*[@class='f5Dvbb'][contains(text(), ' Privacidad ')]",
+    "ValueToFind": "//*[@class='f5Dvbb']",
     "__comments__": "Política de Privacidad de Google"
   },
 
@@ -211,7 +211,11 @@
 
   "__comments__": "LogoImage Step 1 es igual en Step 2",
 
-  "__comments__": "HeadingText Step 1 es igual en Step 2, cambia el texto Verifica tu teléfono",
+  "HeadingText2": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//span[contains(text(),'Verifica tu teléfono')]",
+    "__comments__": "Verifica tu teléfono"
+  },
 
   "HeadingSubtext1": {
     "GetFieldBy": "Xpath",

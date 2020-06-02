@@ -23,7 +23,7 @@ Feature: Funciones básicas de Selenium con BDD - Registro Cuenta Google
     Given Hacer click sobre el botón SiguienteButton1
     Then Cambiar a la nueva ventana "Verificar"
     And Esperar 5 segundos
-    And Verificar el HeadingText con el texto "Verifica tu teléfono"
+    And Verificar el HeadingText2 con el texto "Verifica tu teléfono"
 
     Then Cerrar la APP
 
@@ -46,7 +46,7 @@ Feature: Funciones básicas de Selenium con BDD - Registro Cuenta Google
     Given Hacer click sobre el botón SiguienteButton1
     Then Cambiar a la nueva ventana "Verificar"
     And Esperar 3 segundos
-    And Verificar el HeadingText con el texto "Verifica tu teléfono"
+    And Verificar el HeadingText2 con el texto "Verifica tu teléfono"
 
     Then Cerrar la APP
 
@@ -89,7 +89,7 @@ Feature: Funciones básicas de Selenium con BDD - Registro Cuenta Google
     Given Hacer click sobre el botón SiguienteButton1
     Then Cambiar a la nueva ventana "Verificar"
     And Esperar 3 segundos
-    And Verificar el HeadingText con el texto "Verifica tu teléfono"
+    And Verificar el HeadingText2 con el texto "Verifica tu teléfono"
 
     Then Cerrar la APP
 
@@ -120,7 +120,7 @@ Feature: Funciones básicas de Selenium con BDD - Registro Cuenta Google
     Given Hacer click sobre el botón SiguienteButton1
     Then Cambiar a la nueva ventana "Verificar"
     And Esperar 3 segundos
-    And Verificar el HeadingText con el texto "Verifica tu teléfono"
+    And Verificar el HeadingText2 con el texto "Verifica tu teléfono"
 
     Then Cerrar la APP
 
@@ -151,7 +151,7 @@ Feature: Funciones básicas de Selenium con BDD - Registro Cuenta Google
     Given Hacer click sobre el botón SiguienteButton1
     Then Cambiar a la nueva ventana "Verificar"
     And Esperar 5 segundos
-    And Verificar el HeadingText con el texto "Verifica tu teléfono"
+    And Verificar el HeadingText2 con el texto "Verifica tu teléfono"
 
     Then Cerrar la APP
 
@@ -273,13 +273,13 @@ Feature: Funciones básicas de Selenium con BDD - Registro Cuenta Google
 
     Given Hacer click sobre el link "PrivacidadLink"
     Then Cambiar a la nueva ventana "Privacidad"
-    And Esperar 5 segundos
+    And Esperar 10 segundos
     And Verificar el PrivacidadText con el texto "POLÍTICA DE PRIVACIDAD DE GOOGLE"
     And Cerrar el driver y hacer foco en la ventana "Principal"
 
     Given Hacer click sobre el link "TerminosLink"
     Then Cambiar a la nueva ventana "Terminos"
-    And Esperar 5 segundos
+    And Esperar 10 segundos
     And Verificar el TerminosText con el texto "TÉRMINOS DEL SERVICIO DE GOOGLE"
     And Cerrar el driver y hacer foco en la ventana "Principal"
 
